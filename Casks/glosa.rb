@@ -1,9 +1,9 @@
 cask "glosa" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.1.0-alpha.34"
-  sha256 arm:   "0d3e8d129a8dfdf6dd999650a11d4780ecc3e8cf6a9bbfd4728d258951400318",
-         intel: "72f99e24f37257e987be44b8eb772a97d730cbba4bddb1d22e1775c72415ae29"
+  version "0.1.0-alpha.35"
+  sha256 arm:   "ebe2a1fdccdd6078e95cd10c7ad96ff608c6cddd86012a78fec0f17a16b5be2b",
+         intel: "31307c7cb9dda61e376e758c89e76f56a05d5a23a872b8016c9d485e27a103f5"
 
   url "https://github.com/davebream/glosa/releases/download/v#{version}/glosa-#{version}-#{arch}.dmg"
   name "glosa"
@@ -37,7 +37,9 @@ cask "glosa" do
     glosa.app is signed ad hoc, not notarized by Apple, so macOS blocks it, and the glosa
     command line inside it, until you allow it. After installing, and again after each upgrade, run:
       xattr -dr com.apple.quarantine #{appdir}/glosa.app
-    Or open the app once, then choose Open Anyway in System Settings, Privacy & Security.
+    If that answers "Operation not permitted", macOS needs your terminal allowed to change apps:
+    System Settings, Privacy & Security, App Management. Or open the app once, then choose
+    Open Anyway in System Settings, Privacy & Security.
 
     The glosa command line is linked into #{HOMEBREW_PREFIX}/bin and runs on the Bun runtime
     inside the app, so no separate Bun install is needed. If another glosa install is already
