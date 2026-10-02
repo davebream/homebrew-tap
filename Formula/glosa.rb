@@ -1,8 +1,8 @@
 class Glosa < Formula
   desc "Local-first review workspace for documents drafted by AI coding agents"
   homepage "https://github.com/davebream/glosa"
-  url "https://registry.npmjs.org/@davebream/glosa/-/glosa-0.1.0-alpha.40.tgz"
-  sha256 "afc7b79d083c76b39185bdfb1e93e403ffae3459b941556a98b7b6937e10edfa"
+  url "https://registry.npmjs.org/@davebream/glosa/-/glosa-0.1.0-alpha.41.tgz"
+  sha256 "bc5941b6954b43e631830463e68e9ae24b8dec048f336e9bd617abd80b76c7ce"
   license "Apache-2.0"
 
   livecheck do
