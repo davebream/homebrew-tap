@@ -1,9 +1,9 @@
 cask "glosa" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.1.0-alpha.43"
-  sha256 arm:   "70bbff9c69035046ba0b17b1aa2946d4ed7df02e5a90e99b6b8235ee3fe93dba",
-         intel: "bea51fd0b6c3c0491d20fecf89fc8b23d997b919e7f919923a328889f78a668d"
+  version "0.1.0-alpha.44"
+  sha256 arm:   "067e2029822bd231bb312384ed3d2257e4f47b1f57a54773f238a40e3a1e3d8c",
+         intel: "c4d9d22979297860a7bf57de098a0b512e1fc0efddade31cad605820093a9b01"
 
   url "https://github.com/davebream/glosa/releases/download/v#{version}/glosa-#{version}-#{arch}.dmg"
   name "glosa"
